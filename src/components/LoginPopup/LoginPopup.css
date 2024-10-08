@@ -1,0 +1,289 @@
+body {
+  font-family: 'Comfortaa', sans-serif; 
+}
+
+h1, h2, h3, h4, p, input {
+  font-family: 'Comfortaa', sans-serif;
+
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    89.7deg,
+    rgb(0, 32, 95) 2.8%,
+    rgb(132, 53, 142) 97.8%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-popup {
+  position: absolute;
+  z-index: 3;
+  display: grid;
+  border: 1px 1px 1px 1px;
+  opacity: 1px;
+}
+
+.login-popup-container {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 60px;
+  border-radius: 40px; 
+  border: 3px solid;
+  font-size: 18px;
+  opacity: 0px;
+  color: #bcbaba;
+  background: #ffffff1a;
+  -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  border: linear-gradient(
+    135.59deg,
+    rgba(255, 255, 255, 0.79) 1.28%,
+    rgba(255, 255, 255, 0.24) 96.26%
+  );
+  z-index: 3;
+}
+
+.figure-1,
+.figure-2,
+.figure-3,
+.figure-3-1,
+.figure-4,
+.figure-4-1,
+.figure-5,
+.figure-5-1,
+.figure-6,
+.figure-7 {
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.figure-1 {
+  top: 3%; 
+  left: 48%;
+  z-index: 2;
+}
+.figure-2 {
+  top: 65%;
+  left: 0%;
+  z-index: 2;
+}
+.figure-3 {
+  top: 75%;
+  left: 68.5%;
+}
+.figure-3-1 {
+  top: 68%;
+  left: 64%;
+
+  z-index: 4;
+}
+.figure-4 {
+  top: 39%;
+  left: 22%;
+  z-index: 2;
+}
+.figure-4-1 {
+  top: 22%;
+  left: 23%;
+  z-index: 4;
+}
+
+.figure-5 {
+  top: 65%;
+  left: 24.5%;
+  z-index: 2;
+}
+.figure-5-1 {
+  top: 82%;
+  left: 24%;
+  z-index: 2;
+}
+.figure-6 {
+  top: 0%;
+  left: 20%;
+  z-index: 2;
+}
+.figure-7 {
+  top: 81%;
+  left: 85%;
+  z-index: 2;
+}
+
+.login-popup-title {
+  display: flex;
+  align-items: center;
+  font-size: 24px; 
+  color: white;
+}
+
+.login-popup-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.login-popup-inputs input {
+  outline: none;
+  width: 450px;
+  height: 30px;
+  border: 1px solid rgba(188, 190, 192, 1);
+  padding: 10px;
+  border-radius: 9px;
+}
+.signin {
+  border: none;
+  padding: 20px;
+  width: 470px;
+  border-radius: 8px;
+  color: white;
+  background-color: rgba(189, 12, 71, 1);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+.login-popup p span {
+  color: rgba(189, 12, 71, 1);
+  font-weight: 500;
+  cursor: pointer;
+}
+.input-title{
+  font-size: 14px;
+}
+
+.social-network {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+
+}
+
+.social {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 140px;
+  height: 50px;
+  
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+}
+
+
+@media all and (max-width: 768px) {
+  .login-popup-container  {
+    
+    gap: 10px;
+    width: 540px;
+    height: 770px;
+  }
+  .social{
+    width: 140px;
+  }
+
+  .social-network{
+    gap: 9px;
+
+  }
+  .figure-1,
+  .figure-2,
+  .figure-3,
+  .figure-3-1,
+  .figure-4,
+  .figure-4-1,
+  .figure-5,
+  .figure-5-1,
+  .figure-6,
+  .figure-7 {
+    position: absolute;
+  }
+
+  .figure-1 {
+    top: 14%;
+    left: 39%;
+    width: 60%;
+  }
+
+  .figure-2 {
+    top: 88%;
+    left: 0%;
+    width: 30%;
+  }
+
+  .figure-3 {
+    top: 64%;
+    left: 85%;
+    width: 30%;
+  }
+  .figure-3-1 {
+    top: 58%;
+    left: 84%;
+    width: 29%;
+  }
+
+  .figure-4 {
+    top: 37%;
+    left: -2%;
+    width: 20%;
+  }
+  .figure-4-1 {
+    top: 30%;
+    left: -10%;
+    width: 28%;
+  }
+
+  .figure-5 {
+    top: 80%;
+    left: 35%;
+    width: 30%;
+  }
+  .figure-5-1 {
+    top: 87%;
+    left: 29%;
+    width: 20%;
+  }
+  .figure-6 {
+    top: 0%;
+    left: 20%;
+    width: 40%;
+  }
+
+  .figure-7 {
+    top: 95%;
+    left: 80%;
+    width: 20%;
+  }
+  .forgot-pass {
+    color: red;
+
+  }
+
+  .login-popup-container, 
+  .login-popup-inputs input, 
+  .login-popup-container button, 
+  .login-popup-title, 
+  .input-title, 
+  .forgot-pass {
+
+    margin-left: 20px;
+    
+
+  }
+}
